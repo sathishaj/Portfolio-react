@@ -5,7 +5,7 @@ function Navbar() {
   const scrollToSection = (id) => {
     document.getElementById(id).scrollIntoView({ behavior: "smooth" });
   };
-
+ 
   return (
     <div className="w-full h-[64px] bg-white flex items-center justify-end p-5 shadow-md fixed top-0 left-0 z-50">
       <ul className="flex gap-2">

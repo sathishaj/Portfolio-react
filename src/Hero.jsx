@@ -1,5 +1,6 @@
 import { motion } from "framer-motion";
-import { Link } from "react-router-dom";
+import sathish from "../src/assets/sathish.jpeg"
+import { img } from "motion/react-client";
 
 const Hero = () => {
   const text = "Hi, I'm Sathish Kumar".split("");
@@ -9,9 +10,18 @@ const Hero = () => {
   };
 
   return (
-    <div className="relative flex items-center justify-center h-screen">
-      <div className="text-center px-6">
-        {/* Animated Text */}
+    <div className="relative flex flex-col gap-3 items-center justify-center h-screen mt-20 ">
+       <motion.img
+        initial={{ opacity: 0, scale: 0.5 }}
+            animate={{ opacity: 1, scale: 1 }}
+            transition={{
+                duration: 0.8,
+                delay: 0.5,
+                ease: [0, 0.71, 0.2, 1.01],
+            }}
+        src ={sathish} alt="profile image" 
+        className="w-32 h-32 bg-white rounded-full object-cover border-white " />
+      <div className="text-center px-6">   
         <h1 className="text-4xl sm:text-5xl font-bold text-gray-800">
           {text.map((el, i) => (
             <motion.span
