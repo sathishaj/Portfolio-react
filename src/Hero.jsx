@@ -10,7 +10,7 @@ const Hero = () => {
   };
 
   return (
-    <div className="relative flex flex-col gap-3 items-center justify-center h-screen mt-20 ">
+    <div className="relative flex flex-col gap-3 items-center justify-center h-screen ">
        <motion.img
         initial={{ opacity: 0, scale: 0.5 }}
             animate={{ opacity: 1, scale: 1 }}
