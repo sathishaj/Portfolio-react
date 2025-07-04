@@ -20,7 +20,7 @@ const Hero = () => {
                 ease: [0, 0.71, 0.2, 1.01],
             }}
         src ={sathish} alt="profile image" 
-        className="w-32 h-32 bg-white rounded-full object-cover border-white " />
+        className="w-32 h-32 bg-white rounded-full object-cover border-white mt-3 " />
       <div className="text-center px-6">   
         <h1 className="text-4xl sm:text-5xl font-bold text-gray-800">
           {text.map((el, i) => (
